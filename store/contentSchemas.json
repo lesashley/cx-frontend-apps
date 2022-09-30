@@ -1,0 +1,38 @@
+{
+  "definitions": {
+    "AdPodsList": {
+      "type": "array",
+      "title": "Ad list pods",
+      "items": {
+        "properties": {
+          "image": {
+            "$ref": "app:vtex.native-types#/definitions/url",
+            "default": "",
+            "title": "Imagen",
+            "widget": {
+              "ui:widget": "image-uploader"
+            }
+          },
+          "mobileImage": {
+            "$ref": "app:vtex.native-types#/definitions/url",
+            "default": "",
+            "title": "Imagen Mobile",
+            "widget": {
+              "ui:widget": "image-uploader"
+            }
+          },
+          "title": {
+            "title": "Título de Ad pod",
+            "$ref": "app:vtex.native-types#/definitions/text",
+            "default": ""
+          },
+          "link": {
+            "default": "",
+            "title": "",
+            "$ref": "app:vtex.native-types#/definitions/link"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.adpods__container {
+  display: flex;
+  overflow: auto;
+  margin-bottom: 64px;
+}
+
+.adpods__container::-webkit-scrollbar {
+  height: 4px;
+}
+.adpods__container::-webkit-scrollbar-track {
+  background-clip: padding-box;
+  background-color: #F2F2F2;
+  border-right: 16px solid transparent;
+}
+.adpods__container::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  border-right: 16px solid transparent;
+  background-color: #DBDBDB;
+}
+
+
+.adpods__item {
+  width: 80px;
+  margin-right: 15px;
+}
+.adpods__item--link {
+  text-decoration: none;
+}
+.adpods__item--image {
+  width: 80px;
+}
+
+@media screen and (min-width: 760px) {
+  .adpods__item--image {
+    width: 100px;
+  }
+  .adpods__item {
+    width: 100px
+  }
+}

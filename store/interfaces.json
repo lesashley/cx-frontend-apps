@@ -1,0 +1,17 @@
+{
+  "list-context.ad-pods-list": {
+    "component": "AdPodsList",
+    "composition": "children",
+    "allowed": "*",
+    "content": {
+      "properties": {
+        "adPods": {
+          "$ref": "app:cxperu.frontend-apps#/definitions/AdPodsList"
+        }
+      }
+    }
+  },
+  "promo-grid": {
+    "component": "PromoGrid"
+  }
+}
