@@ -24,19 +24,23 @@ type Props = {
   src: string
   title: string
   link: LinkProps
+  description: string
+  author: string
 }
 
-function AdPod ({src, title, link}: Props) {
-  const CSS_HANDLES = ['adpods__item', 'adpods__item--title', 'adpods__item--image', 'adpods__item--link']
+function AdPod({ src, title, link, description, author }: Props) {
+  const CSS_HANDLES = ['adpods__item', 'adpods__item--title', 'adpods__item--image', 'adpods__item--link', 'adpods__item--description', 'adpods__item--author']
   const handles = useCssHandles(CSS_HANDLES);
   return (
     <div className={handles['adpods__item']}>
       <Link
-        to = {link.url}
-        className = {handles['adpods__item--link']}
+        to={link.url}
+        className={handles['adpods__item--link']}
       >
         <img className={handles['adpods__item--image']} src={src} alt={title} />
         <p className={handles['adpods__item--title']}>{title}</p>
+        <p className={handles['adpods__item--description']}>{description}</p>
+        <p className={handles['adpods__item--author']}>{author}</p>
       </Link>
     </div>
   )
@@ -51,7 +55,9 @@ AdPod.schema = {
       type: 'string',
       widget: {
         'ui:widget': 'image-uploader'
-      }
+      },
+      description: 'string',
+      author: 'string'
     },
     title: {
       title: 'Titulo de Ad Pod',

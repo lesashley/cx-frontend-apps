@@ -2,6 +2,8 @@ export type AdPodsSchema = Array<{
   image: string
   link?: Link
   title?: string
+  description?: string
+  author?: string
 }>
 
 interface Link {

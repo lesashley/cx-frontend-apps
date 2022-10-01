@@ -30,6 +30,16 @@
             "default": "",
             "title": "",
             "$ref": "app:vtex.native-types#/definitions/link"
+          },
+          "description": {
+            "title": "Descripcion de Ad pod",
+            "$ref": "app:vtex.native-types#/definitions/text",
+            "default": ""
+          },
+          "author": {
+            "title": "Autor de Ad pod",
+            "$ref": "app:vtex.native-types#/definitions/text",
+            "default": ""
           }
         }
       }
